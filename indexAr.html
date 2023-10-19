@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="./css/styleAr.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;400;600;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="todo-app">
+            <div class="title">
+                <h2>قائمة المهام</h2>
+                <a href="./index.html">اللغة <i class="fas fa-globe"></i></a>
+                <a href="#">المظهر <i class="fas fa-sun" id="modeicon"></i></a>
+            </div>
+
+            <div class="input-content">
+                <input type="text" placeholder="أضف مهمتك" id="input-box">
+                <button onclick="addTask()">أضف</button>
+            </div>
+            
+            <ul id="list-content">
+                <!-- <li class="checked">test</li>
+                <li>test</li>
+                <li>test</li> -->
+            </ul>
+
+            <div class="delete-all">
+                <button onclick="deleteAll()">حذف الكل</button>
+            </div>
+            
+        </div>
+
+        <footer class="footer">
+            <p>جميع الحقوق محفوظة <span>&copy;</span> Ahmed M.El-Faioumy</p>
+        </footer>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
