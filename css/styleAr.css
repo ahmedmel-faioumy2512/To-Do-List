@@ -77,10 +77,13 @@ body {
 }
 @media (max-width: 575px){
     .todo-app h2 {
-        font-size: 25px;
+        font-size: 16px;
     }
     .todo-app i {
-        font-size: 20px;
+        font-size: 16px;
+    }
+    .todo-app a {
+        font-size: 8px;
     }
 }
 .input-content {
@@ -121,6 +124,12 @@ body {
     background-color: #042f1a;
     box-shadow: 0 0 10px var(--main-color);
 }
+@media (max-width: 575px){
+    .input-content button {
+        padding: 8px 12px;
+        font-size: 16px;
+    }
+}
 ul {
     align-items: center;
     justify-content: center;
@@ -137,7 +146,7 @@ ul li {
 }
 @media (max-width: 575px) {
     ul li {
-        font-size: 16px;
+        font-size: 14px;
         padding-top: 18px;
     }
 }
@@ -200,6 +209,12 @@ ul li span:hover {
 }
 .delete-all button:hover {
     background-color: #833916;
+}
+@media (max-width: 575px){
+    .delete-all button {
+        padding: 8px 12px;
+        font-size: 16px;
+    }
 }
 .footer {
     padding: 8px 4px;
